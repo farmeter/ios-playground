@@ -20,14 +20,34 @@ class MyViewController : UIViewController {
         view.addSubview(label)
         
         self.view = view
+        
+        //FIXME
+        var coffeeInfo = ("Americano", 4)
+//        printf(coffeeInfo.1) //Americano
+//        printf(coffeeInfo.2) //4
     }
     
     func headLabel() -> UILabel {
         let headLabel = UILabel()
         headLabel.frame = CGRect(x:50, y:100, width: 200, height:30)
-        headLabel.text = "This is head.."
+        headLabel.text = "This is head..."
         return headLabel
     }
+  
+    
 }
+
+//FIXME
+//Class, struct Test
+class Dog {
+    var name: String?
+    var age: Int?
+}
+struct Coffee {
+    var name: String?
+    var size: String?
+}
+
+
 // Present the view controller in the Live View window
 PlaygroundPage.current.liveView = MyViewController()
