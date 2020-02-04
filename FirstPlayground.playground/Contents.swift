@@ -48,6 +48,21 @@ struct Coffee {
     var size: String?
 }
 
+//protocol = interface
+protocol Sendable {
+    var from: String? { get }
+    var to: String { get }
+    
+    func send()
+}
+
+struct Mail: Sendable {
+    var from: String?
+    var to: String
+    func send() {
+        print("Send a mail from \(self.from)")
+    }
+}
 
 // Present the view controller in the Live View window
 PlaygroundPage.current.liveView = MyViewController()
