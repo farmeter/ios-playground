@@ -20,11 +20,6 @@ class MyViewController : UIViewController {
         view.addSubview(label)
         
         self.view = view
-        
-        //FIXME
-        var coffeeInfo = ("Americano", 4)
-//        printf(coffeeInfo.1) //Americano
-//        printf(coffeeInfo.2) //4
     }
     
     func headLabel() -> UILabel {
@@ -33,35 +28,7 @@ class MyViewController : UIViewController {
         headLabel.text = "This is head..."
         return headLabel
     }
-  
     
-}
-
-//FIXME
-//Class, struct Test
-class Dog {
-    var name: String?
-    var age: Int?
-}
-struct Coffee {
-    var name: String?
-    var size: String?
-}
-
-//protocol = interface
-protocol Sendable {
-    var from: String? { get }
-    var to: String { get }
-    
-    func send()
-}
-
-struct Mail: Sendable {
-    var from: String?
-    var to: String
-    func send() {
-        print("Send a mail from \(self.from)")
-    }
 }
 
 // Present the view controller in the Live View window
