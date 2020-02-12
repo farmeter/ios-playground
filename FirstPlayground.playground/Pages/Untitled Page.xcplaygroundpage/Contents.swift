@@ -6,8 +6,7 @@ import PlaygroundSupport
 class MyViewController : UIViewController {
     override func loadView() {
         
-        print("## Hello, loadview start!")
-        
+        //print("## Hello, loadview start!")        
         let view = UIView()
         view.backgroundColor = .white
 
