@@ -24,16 +24,16 @@ class ViewController: UIViewController {
      하나의 섹션만 사용하는 경우 section 파라미터를 비교해서 몇 번째 섹션인지를 체크하지 않아도 됨.
      100개의 row가 있다고 가정.
     */
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 100
-    }
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return 100
+//    }
     
     // n번째 섹션의 m번째 row를 그리는데 필요한 셀 반환
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        cell.textLabel?.text = "\(indexPath.row)"
-        return cell
-    }
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell = UITableViewCell()
+//        cell.textLabel?.text = "\(indexPath.row)"
+//        return cell
+//    }
     
 }
 
